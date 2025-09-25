@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="section center-text">
+  <h1> About Me</h1>
+  <img src="{{ url_for('static', filename='nishu.jpg') }}" alt="Profile" class="avatar-large">
+  <h2>Hi, I’m Nishanth B M— I am intrested in Learning Cyber Security And Teaching it to Others  </h2>
+  <p class="quote">“I enjoy solving real-world problems and continuously exploring new technologies.”</p>
+</section>
+
+<section class="section">
+  <h3> Education</h3>
+  <p>
+    I Am pursuing my B.E In CSE(IC) At Rajarajeswari College Of Engineering.
+    My academic journey focuses on IOT,Cyber Security Including Block Chain Technology
+  </p>
+</section>
+
+<section class="section">
+  <h3> Interests</h3>
+  <div class="interest-icons">
+    <div class="interest-card">
+      <img src="{{ url_for('static', filename='coding.png') }}" class="icon">
+      <p>Programming</p>
+    </div>
+    <div class="interest-card">
+      <img src="{{ url_for('static', filename='ai.png') }}" class="icon">
+      <p>Artificial Intelligence</p>
+    </div>
+    <div class="interest-card">
+      <img src="{{ url_for('static', filename='cyber.jpg') }}" class="icon">
+      <p>Cyber Security</p>
+    </div>
+  </div>
+</section>
+{% endblock %}
